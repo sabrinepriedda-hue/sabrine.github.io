@@ -1,127 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Sabrine</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Sabrine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { margin-top: 10px; font-size: 1.2em; }
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 { color: #4a90e2; }
+    ul { list-style-type: square; padding-left: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 8px; text-align: left; }
+    a { color: #4a90e2; text-decoration: none; }
+    footer { text-align: center; padding: 30px 20px; background-color: #333; color: white; }
+
+    /* CORREÇÃO: Estilos para as classes de KPI e Controles para que o layout funcione */
+    .kpi-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        margin: 30px 0;
+        gap: 15px;
     }
-    header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
+    .kpi {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-left: 4px solid #4a90e2; 
+        border-radius: 5px;
+        flex: 1; 
+        min-width: 150px; 
+        text-align: center;
     }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { margin-top: 10px; font-size: 1.2em; }
-    section {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 30px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .kpi .value {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
     }
-    h2 { color: #4a90e2; }
-    ul { list-style-type: square; padding-left: 20px; }
-    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
-    table, th, td { border: 1px solid #ccc; }
-    th, td { padding: 8px; text-align: left; }
-    a { color: #4a90e2; text-decoration: none; }
-    footer { text-align: center; padding: 30px 20px; background-color: #333; color: white; }
-  </style>
+    .kpi .small {
+        font-size: 0.8em;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .search-input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 60%;
+    }
+    .btn {
+        padding: 8px 15px;
+        background-color: #4a90e2;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>Sabrine Priedda</h1>
-  <p>Portfólio Profissional - Odontologia & Gestão</p>
+  <h1>Sabrine Priedda</h1>
+  <p>Portfólio Profissional - Odontologia & Gestão</p>
 </header>
 
 <section class="about">
-  <h2>Sobre Mim</h2>
-  <p>Sou dentista com experiência clínica e administrativa, com experiência em atendimento clínico odontológico, incluindo rotinas relacionadas a convênios como Amil e uso de sistemas de gestão.</p>
+  <h2>Sobre Mim</h2>
+  <p>Sou dentista com experiência clínica e administrativa, com experiência em atendimento clínico odontológico, incluindo rotinas relacionadas a convênios como Amil e uso de sistemas de gestão.</p>
 </section>
 
 <section class="skills">
-  <h2>Habilidades</h2>
-  <ul>
-    <li>Atendimento clínico: limpeza, restauração, </li>
-    <li>Capacidade de análise crítica de processos clínicos e administrativos</li>
-    <li>Identificação de inconsistências e sugestão de melhorias</li>
-    <li>Conhecimentos básicos em auditoria prospectiva e conformidade de procedimentos</li>
-    <li>Organização de processos internos</li>
-    <li>Gestão de processos clínicos e administrativos</li>
-    <li>Comunicação e atendimento ao paciente</li>
-  </ul>
+  <h2>Habilidades</h2>
+  <ul>
+    <li>Atendimento clínico: limpeza, restauração, </li>
+    <li>Capacidade de análise crítica de processos clínicos e administrativos</li>
+    <li>Identificação de inconsistências e sugestão de melhorias</li>
+    <li>Conhecimentos básicos em auditoria prospectiva e conformidade de procedimentos</li>
+    <li>Organização de processos internos</li>
+    <li>Gestão de processos clínicos e administrativos</li>
+    <li>Comunicação e atendimento ao paciente</li>
+  </ul>
 </section>
 
 <section class="experience">
-  <h2>Experiência Profissional</h2>
-  <p><strong>Clínica Sorriso Imperial</strong> - Dentista & Gestão de Planos (Amil)<br>
-     execução de atendimentos clínicos,Revisão de guias de procedimentos odontológicos antes da execução,Prevenção de glosas e retrabalho através da checagem de documentação, contratos e autorização de procedimentos,controle dos atendimentos clínicos para que estivessem dentro das normas regulatórias.</p>
+  <h2>Experiência Profissional</h2>
+  <p><strong>Clínica Sorriso Imperial</strong> - Dentista & Gestão de Planos (Amil)<br>
+     execução de atendimentos clínicos,Revisão de guias de procedimentos odontológicos antes da execução,Prevenção de glosas e retrabalho através da checagem de documentação, contratos e autorização de procedimentos,controle dos atendimentos clínicos para que estivessem dentro das normas regulatórias.</p>
 
-  <p><strong>Agência de Social Media</strong> - Assistente Administrativo<br>
-     Experiência em organização de processos, controle de clientes e auxílio na gestão de campanhas digitais.</p>
+  <p><strong>Agência de Social Media</strong> - Assistente Administrativo<br>
+     Experiência em organização de processos, controle de clientes e auxílio na gestão de campanhas digitais.</p>
 
-  <p><strong>Outras experiências</strong> - Auxiliar administrativo e suporte em e-commerce<br>
-     Gestão administrativa e financeira, otimização de fluxos internos e atendimento ao cliente.</p>
+  <p><strong>Outras experiências</strong> - Auxiliar administrativo e suporte em e-commerce<br>
+     Gestão administrativa e financeira, otimização de fluxos internos e atendimento ao cliente.</p>
 </section>
 
-<!-- ======= Portfólio Auditoria ======= -->
-<div class='container'>
-  <h1>Portfólio - Auditoria Odontológica</h1>
+<section class='portfolio-item'>
+  <h1>Portfólio - Auditoria Odontológica</h1>
 
-  <div class='kpi-row'>
-    <div class='kpi'><div class='small'>Total de Procedimentos</div><div class='value'>XXXX</div></div>
-    <div class='kpi'><div class='small'>Valor Cobrado (R$)</div><div class='value'>R$ XXXX</div></div>
-    <div class='kpi'><div class='small'>Valor Autorizado (R$)</div><div class='value'>R$ XXXX</div></div>
-    <div class='kpi'><div class='small'>Valor Glosado (R$)</div><div class='value'>R$ XXXX</div></div>
-    <div class='kpi'><div class='small'>Taxa de Glosa</div><div class='value'>XX%</div></div>
-  </div>
+  <div class='kpi-row'>
+    <div class='kpi'><div class='small'>Total de Procedimentos</div><div class='value'>XXXX</div></div>
+    <div class='kpi'><div class='small'>Valor Cobrado (R$)</div><div class='value'>R$ XXXX</div></div>
+    <div class='kpi'><div class='small'>Valor Autorizado (R$)</div><div class='value'>R$ XXXX</div></div>
+    <div class='kpi'><div class='small'>Valor Glosado (R$)</div><div class='value'>R$ XXXX</div></div>
+    <div class='kpi'><div class='small'>Taxa de Glosa</div><div class='value'>XX%</div></div>
+  </div>
 
-  <div class='controls'>
-    <input id='search' class='search-input' placeholder='Pesquisar por paciente, dentista, procedimento, motivo...' />
-    <a id='download-csv' class='btn' href='base_auditoria.csv' download>Baixar CSV</a>
-  </div>
+  <div class='controls'>
+        <input id='search' class='search-input' placeholder='Pesquisar por paciente, dentista, procedimento, motivo...' />
+    <a id='download-csv' class='btn' href='base_auditoria.csv' download>Baixar CSV</a>
+  </div>
 
-  <div style='overflow:auto;max-height:600px;'>
-    <!-- AQUI VEM A TABELA GERADA -->
-    <!-- Copia a <table ...> inteira do portfolio_table.html -->
-  </div>
-</div>
-
-<!-- Scripts de busca e ordenação -->
-<script>
-document.getElementById('search').addEventListener('input', function(e){
-  const q = e.target.value.toLowerCase().trim();
-  const table = document.querySelector('.portfolio-table');
-  const rows = table.tBodies[0].rows;
-  for(let r of rows){
-    const text = r.innerText.toLowerCase();
-    r.style.display = text.indexOf(q) > -1 ? '' : 'none';
-  }
-});
-</script>
-    </tr>
-    <!-- Aqui você pode adicionar mais linhas conforme seu portfólio -->
-  </table>
-</section>
+  <div style='overflow:auto;max-height:600px;'>
+          </div>
+    
+    </section>
 
 <section class="contact">
-  <h2>Contato</h2>
-  <p>Email: <a href="mailto: prieddasabrine@email.com">prieddasabrine@email.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/sabrine.priedda.andriolo">linkedin.com/in/sabrine.priedda.andriolo</a></p>
+  <h2>Contato</h2>
+  <p>Email: <a href="mailto: prieddasabrine@email.com">prieddasabrine@email.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/sabrine.priedda.andriolo">linkedin.com/in/sabrine.priedda.andriolo</a></p>
 </section>
 
 <footer>
-  <p>&copy; 2025 Sabrine Priedda</p>
+  <p>&copy; 2025 Sabrine Priedda</p>
 </footer>
 
 </body>
