@@ -1,0 +1,321 @@
+﻿Data,Paciente,Dentista,Especialidade,Procedimento,Codigo TUSS,Valor Cobrado,Valor Autorizado,Glosa,Motivo da Glosa
+2025-07-26,Paciente 001,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,628,628,0,-
+2025-06-16,Paciente 002,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,117,117,0,-
+2025-10-28,Paciente 003,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,650,650,0,-
+2025-08-09,Paciente 004,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,90,71,19,Cobrança duplicada
+2025-01-04,Paciente 005,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,623,623,0,-
+2025-04-04,Paciente 006,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,78,78,0,-
+2025-08-09,Paciente 007,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,638,638,0,-
+2025-09-30,Paciente 008,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,74,74,0,-
+2025-07-13,Paciente 009,Dr. Pedro Lima,Clínico Geral,Extração,10101056,162,105,57,Ausência de justificativa
+2025-06-16,Paciente 010,Dr. João Silva,Clínico Geral,Extração,10101056,175,175,0,-
+2025-04-13,Paciente 011,Dr. João Silva,Clínico Geral,Limpeza,10101012,68,68,0,-
+2025-10-21,Paciente 012,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,116,116,0,-
+2025-10-22,Paciente 013,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,93,80,13,Falta de RX
+2025-09-04,Paciente 014,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,101,101,0,-
+2025-10-08,Paciente 015,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,425,425,0,-
+2025-04-06,Paciente 016,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,630,390,240,Divergência de código
+2025-05-29,Paciente 017,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,80,62,18,Divergência de código
+2025-11-07,Paciente 018,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,117,117,0,-
+2025-06-17,Paciente 019,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,107,107,0,-
+2025-09-23,Paciente 020,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,117,117,0,-
+2025-03-01,Paciente 021,Dr. João Silva,Clínico Geral,Extração,10101056,164,164,0,-
+2025-09-11,Paciente 022,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,109,109,0,-
+2025-04-13,Paciente 023,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,89,89,0,-
+2025-05-02,Paciente 024,Dr. João Silva,Clínico Geral,Limpeza,10101012,74,74,0,-
+2025-01-20,Paciente 025,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,90,90,0,-
+2025-07-20,Paciente 026,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,110,110,0,-
+2025-07-14,Paciente 027,Dr. João Silva,Clínico Geral,Extração,10101056,186,186,0,-
+2025-06-29,Paciente 028,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,109,109,0,-
+2025-06-29,Paciente 029,Dr. Pedro Lima,Clínico Geral,Extração,10101056,186,97,89,Falta de RX
+2025-02-13,Paciente 030,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,108,78,30,Falta de RX
+2025-08-05,Paciente 031,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,402,402,0,-
+2025-09-09,Paciente 032,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,115,115,0,-
+2025-03-25,Paciente 033,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,513,257,256,Divergência de código
+2025-03-25,Paciente 034,Dr. João Silva,Clínico Geral,Restauração,10101034,126,126,0,-
+2025-08-14,Paciente 035,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,88,88,0,-
+2025-07-18,Paciente 036,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,103,90,13,Cobrança duplicada
+2025-10-23,Paciente 037,Dr. João Silva,Clínico Geral,Limpeza,10101012,72,72,0,-
+2025-06-22,Paciente 038,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,98,98,0,-
+2025-05-29,Paciente 039,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,423,302,121,Divergência de código
+2025-07-27,Paciente 040,Dr. João Silva,Clínico Geral,Extração,10101056,134,134,0,-
+2025-03-22,Paciente 041,Dr. João Silva,Clínico Geral,Extração,10101056,135,135,0,-
+2025-05-02,Paciente 042,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,459,459,0,-
+2025-04-01,Paciente 043,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,102,102,0,-
+2025-12-06,Paciente 044,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,91,91,0,-
+2025-07-23,Paciente 045,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,103,103,0,-
+2025-08-18,Paciente 046,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,102,66,36,Ausência de justificativa
+2025-04-02,Paciente 047,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,481,481,0,-
+2025-10-08,Paciente 048,Dr. Pedro Lima,Clínico Geral,Extração,10101056,199,199,0,-
+2025-12-24,Paciente 049,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,105,105,0,-
+2025-11-13,Paciente 050,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,100,63,37,Divergência de código
+2025-10-09,Paciente 051,Dr. Pedro Lima,Clínico Geral,Extração,10101056,165,165,0,-
+2025-06-14,Paciente 052,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,638,638,0,-
+2025-12-15,Paciente 053,Dr. João Silva,Clínico Geral,Extração,10101056,192,192,0,-
+2025-08-09,Paciente 054,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,114,114,0,-
+2025-02-21,Paciente 055,Dr. João Silva,Clínico Geral,Extração,10101056,156,156,0,-
+2025-01-02,Paciente 056,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,98,98,0,-
+2025-06-04,Paciente 057,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,104,104,0,-
+2025-01-31,Paciente 058,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,112,112,0,-
+2025-10-17,Paciente 059,Dr. Pedro Lima,Clínico Geral,Extração,10101056,179,179,0,-
+2025-09-19,Paciente 060,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,448,270,178,Falta de RX
+2025-04-19,Paciente 061,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,635,635,0,-
+2025-11-07,Paciente 062,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,78,78,0,-
+2025-02-24,Paciente 063,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,544,544,0,-
+2025-03-16,Paciente 064,Dr. João Silva,Clínico Geral,Limpeza,10101012,78,78,0,-
+2025-04-28,Paciente 065,Dr. Pedro Lima,Clínico Geral,Extração,10101056,171,171,0,-
+2025-01-19,Paciente 066,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,621,621,0,-
+2025-02-21,Paciente 067,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,580,580,0,-
+2025-09-02,Paciente 068,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,102,102,0,-
+2025-09-20,Paciente 069,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,155,138,17,Cobrança duplicada
+2025-10-20,Paciente 070,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,499,499,0,-
+2025-02-12,Paciente 071,Dr. João Silva,Clínico Geral,Extração,10101056,153,122,31,Cobrança duplicada
+2025-04-05,Paciente 072,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,108,108,0,-
+2025-07-01,Paciente 073,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,417,417,0,-
+2025-10-17,Paciente 074,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,546,546,0,-
+2025-09-08,Paciente 075,Dr. João Silva,Clínico Geral,Limpeza,10101012,80,80,0,-
+2025-10-21,Paciente 076,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,94,94,0,-
+2025-03-09,Paciente 077,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,423,423,0,-
+2025-12-08,Paciente 078,Dr. João Silva,Clínico Geral,Restauração,10101034,156,127,29,Falta de RX
+2025-02-09,Paciente 079,Dr. João Silva,Clínico Geral,Extração,10101056,179,179,0,-
+2025-05-05,Paciente 080,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,113,113,0,-
+2025-04-10,Paciente 081,Dr. João Silva,Clínico Geral,Extração,10101056,197,197,0,-
+2025-05-07,Paciente 082,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,515,515,0,-
+2025-01-20,Paciente 083,Dr. João Silva,Clínico Geral,Restauração,10101034,129,129,0,-
+2025-04-30,Paciente 084,Dr. João Silva,Clínico Geral,Restauração,10101034,142,142,0,-
+2025-12-04,Paciente 085,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,112,112,0,-
+2025-09-25,Paciente 086,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,554,554,0,-
+2025-12-02,Paciente 087,Dr. João Silva,Clínico Geral,Restauração,10101034,123,123,0,-
+2025-09-25,Paciente 088,Dr. João Silva,Clínico Geral,Extração,10101056,173,173,0,-
+2025-06-07,Paciente 089,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,104,104,0,-
+2025-01-22,Paciente 090,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,534,534,0,-
+2025-06-01,Paciente 091,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,405,405,0,-
+2025-11-21,Paciente 092,Dr. João Silva,Clínico Geral,Extração,10101056,184,184,0,-
+2025-02-23,Paciente 093,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,485,485,0,-
+2025-06-22,Paciente 094,Dr. João Silva,Clínico Geral,Limpeza,10101012,75,75,0,-
+2025-03-10,Paciente 095,Dr. João Silva,Clínico Geral,Limpeza,10101012,83,83,0,-
+2025-02-15,Paciente 096,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,625,625,0,-
+2025-12-11,Paciente 097,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,641,641,0,-
+2025-06-29,Paciente 098,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,108,108,0,-
+2025-09-11,Paciente 099,Dr. João Silva,Clínico Geral,Extração,10101056,176,176,0,-
+2025-10-12,Paciente 100,Dr. João Silva,Clínico Geral,Restauração,10101034,142,142,0,-
+2025-08-14,Paciente 101,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,114,114,0,-
+2025-08-02,Paciente 102,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,70,70,0,-
+2025-03-08,Paciente 103,Dr. João Silva,Clínico Geral,Extração,10101056,146,146,0,-
+2025-12-16,Paciente 104,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,90,90,0,-
+2025-08-28,Paciente 105,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,432,432,0,-
+2025-08-04,Paciente 106,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,99,99,0,-
+2025-12-07,Paciente 107,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,120,120,0,-
+2025-04-27,Paciente 108,Dr. João Silva,Clínico Geral,Limpeza,10101012,72,42,30,Ausência de justificativa
+2025-05-01,Paciente 109,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,423,423,0,-
+2025-02-26,Paciente 110,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,448,448,0,-
+2025-06-02,Paciente 111,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,106,106,0,-
+2025-07-08,Paciente 112,Dr. Pedro Lima,Clínico Geral,Extração,10101056,130,130,0,-
+2025-10-24,Paciente 113,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,96,96,0,-
+2025-04-17,Paciente 114,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,436,265,171,Divergência de código
+2025-11-03,Paciente 115,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,97,97,0,-
+2025-09-18,Paciente 116,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,515,439,76,Divergência de código
+2025-11-23,Paciente 117,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,95,95,0,-
+2025-04-21,Paciente 118,Dr. Pedro Lima,Clínico Geral,Extração,10101056,164,164,0,-
+2025-02-09,Paciente 119,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,606,606,0,-
+2025-01-07,Paciente 120,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,108,108,0,-
+2025-03-10,Paciente 121,Dr. João Silva,Clínico Geral,Extração,10101056,138,138,0,-
+2025-09-12,Paciente 122,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,67,67,0,-
+2025-07-01,Paciente 123,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,595,595,0,-
+2025-06-09,Paciente 124,Dr. Pedro Lima,Clínico Geral,Extração,10101056,200,200,0,-
+2025-06-12,Paciente 125,Dr. João Silva,Clínico Geral,Limpeza,10101012,69,69,0,-
+2025-03-21,Paciente 126,Dr. Pedro Lima,Clínico Geral,Extração,10101056,190,190,0,-
+2025-10-11,Paciente 127,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,139,139,0,-
+2025-03-01,Paciente 128,Dr. Pedro Lima,Clínico Geral,Extração,10101056,186,186,0,-
+2025-02-06,Paciente 129,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,109,71,38,Divergência de código
+2025-08-31,Paciente 130,Dr. João Silva,Clínico Geral,Restauração,10101034,148,148,0,-
+2025-12-09,Paciente 131,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,112,112,0,-
+2025-03-09,Paciente 132,Dr. Pedro Lima,Clínico Geral,Extração,10101056,128,75,53,Falta de RX
+2025-11-13,Paciente 133,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,100,100,0,-
+2025-10-24,Paciente 134,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,119,119,0,-
+2025-01-07,Paciente 135,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,105,105,0,-
+2025-08-03,Paciente 136,Dr. Pedro Lima,Clínico Geral,Extração,10101056,138,138,0,-
+2025-01-07,Paciente 137,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,171,171,0,-
+2025-02-12,Paciente 138,Dr. João Silva,Clínico Geral,Limpeza,10101012,87,87,0,-
+2025-05-19,Paciente 139,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,124,124,0,-
+2025-03-24,Paciente 140,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,448,448,0,-
+2025-12-04,Paciente 141,Dr. João Silva,Clínico Geral,Restauração,10101034,149,149,0,-
+2025-05-15,Paciente 142,Dr. João Silva,Clínico Geral,Limpeza,10101012,84,84,0,-
+2025-07-20,Paciente 143,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,638,638,0,-
+2025-04-05,Paciente 144,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,423,423,0,-
+2025-05-29,Paciente 145,Dr. João Silva,Clínico Geral,Extração,10101056,194,194,0,-
+2025-08-15,Paciente 146,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,103,103,0,-
+2025-04-27,Paciente 147,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,552,552,0,-
+2025-08-04,Paciente 148,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,62,62,0,-
+2025-06-30,Paciente 149,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,149,149,0,-
+2025-08-31,Paciente 150,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,539,539,0,-
+2025-05-03,Paciente 151,Dr. João Silva,Clínico Geral,Restauração,10101034,125,125,0,-
+2025-08-30,Paciente 152,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,110,110,0,-
+2025-02-02,Paciente 153,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,109,109,0,-
+2025-01-08,Paciente 154,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,589,589,0,-
+2025-06-11,Paciente 155,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,118,102,16,Falta de RX
+2025-10-17,Paciente 156,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,60,51,9,Ausência de justificativa
+2025-06-17,Paciente 157,Dr. Pedro Lima,Clínico Geral,Extração,10101056,163,163,0,-
+2025-04-23,Paciente 158,Dr. João Silva,Clínico Geral,Extração,10101056,180,180,0,-
+2025-07-29,Paciente 159,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,114,114,0,-
+2025-10-04,Paciente 160,Dr. João Silva,Clínico Geral,Limpeza,10101012,63,63,0,-
+2025-02-12,Paciente 161,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,533,533,0,-
+2025-03-14,Paciente 162,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,97,75,22,Divergência de código
+2025-12-27,Paciente 163,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,454,324,130,Cobrança duplicada
+2025-11-18,Paciente 164,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,643,643,0,-
+2025-05-22,Paciente 165,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,120,75,45,Cobrança duplicada
+2025-10-04,Paciente 166,Dr. João Silva,Clínico Geral,Limpeza,10101012,73,73,0,-
+2025-10-10,Paciente 167,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,499,499,0,-
+2025-11-03,Paciente 168,Dr. João Silva,Clínico Geral,Extração,10101056,149,87,62,Divergência de código
+2025-05-15,Paciente 169,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,114,114,0,-
+2025-04-21,Paciente 170,Dr. João Silva,Clínico Geral,Extração,10101056,135,81,54,Divergência de código
+2025-07-23,Paciente 171,Dr. João Silva,Clínico Geral,Limpeza,10101012,72,72,0,-
+2025-12-05,Paciente 172,Dr. João Silva,Clínico Geral,Extração,10101056,129,129,0,-
+2025-12-02,Paciente 173,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,649,649,0,-
+2025-10-29,Paciente 174,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,496,496,0,-
+2025-09-12,Paciente 175,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,463,463,0,-
+2025-02-01,Paciente 176,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,103,73,30,Falta de RX
+2025-04-19,Paciente 177,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,168,168,0,-
+2025-01-11,Paciente 178,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,459,459,0,-
+2025-06-17,Paciente 179,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,419,419,0,-
+2025-11-06,Paciente 180,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,621,621,0,-
+2025-11-23,Paciente 181,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,100,100,0,-
+2025-02-03,Paciente 182,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,451,345,106,Cobrança duplicada
+2025-12-13,Paciente 183,Dr. Pedro Lima,Clínico Geral,Extração,10101056,188,188,0,-
+2025-11-20,Paciente 184,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,92,92,0,-
+2025-08-28,Paciente 185,Dr. João Silva,Clínico Geral,Restauração,10101034,169,142,27,Ausência de justificativa
+2025-11-20,Paciente 186,Dr. Pedro Lima,Clínico Geral,Extração,10101056,150,150,0,-
+2025-08-04,Paciente 187,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,157,157,0,-
+2025-06-29,Paciente 188,Dr. João Silva,Clínico Geral,Extração,10101056,192,163,29,Divergência de código
+2025-07-25,Paciente 189,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,515,515,0,-
+2025-07-21,Paciente 190,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,617,617,0,-
+2025-12-30,Paciente 191,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,117,117,0,-
+2025-05-21,Paciente 192,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,409,409,0,-
+2025-09-30,Paciente 193,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,72,72,0,-
+2025-05-08,Paciente 194,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,98,98,0,-
+2025-08-25,Paciente 195,Dr. Pedro Lima,Clínico Geral,Extração,10101056,126,126,0,-
+2025-01-03,Paciente 196,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,118,118,0,-
+2025-05-05,Paciente 197,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,118,118,0,-
+2025-01-27,Paciente 198,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,131,131,0,-
+2025-05-19,Paciente 199,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,521,521,0,-
+2025-04-20,Paciente 200,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,495,495,0,-
+2025-02-04,Paciente 201,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,160,105,55,Cobrança duplicada
+2025-05-17,Paciente 202,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,565,565,0,-
+2025-08-29,Paciente 203,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,129,72,57,Ausência de justificativa
+2025-12-20,Paciente 204,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,477,477,0,-
+2025-08-21,Paciente 205,Dr. João Silva,Clínico Geral,Limpeza,10101012,90,90,0,-
+2025-05-18,Paciente 206,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,427,427,0,-
+2025-11-17,Paciente 207,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,72,72,0,-
+2025-03-08,Paciente 208,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,110,72,38,Falta de RX
+2025-06-13,Paciente 209,Dr. Pedro Lima,Clínico Geral,Extração,10101056,125,125,0,-
+2025-04-21,Paciente 210,Dr. João Silva,Clínico Geral,Restauração,10101034,161,89,72,Falta de RX
+2025-08-17,Paciente 211,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,116,116,0,-
+2025-01-23,Paciente 212,Dr. João Silva,Clínico Geral,Restauração,10101034,124,124,0,-
+2025-11-21,Paciente 213,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,106,81,25,Ausência de justificativa
+2025-09-11,Paciente 214,Dr. João Silva,Clínico Geral,Extração,10101056,183,183,0,-
+2025-02-14,Paciente 215,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,82,82,0,-
+2025-11-02,Paciente 216,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,104,104,0,-
+2025-03-02,Paciente 217,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,95,95,0,-
+2025-02-17,Paciente 218,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,95,95,0,-
+2025-08-28,Paciente 219,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,103,76,27,Falta de RX
+2025-08-04,Paciente 220,Dr. João Silva,Clínico Geral,Limpeza,10101012,71,71,0,-
+2025-10-08,Paciente 221,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,99,61,38,Cobrança duplicada
+2025-08-13,Paciente 222,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,402,402,0,-
+2025-10-08,Paciente 223,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,551,551,0,-
+2025-05-18,Paciente 224,Dr. João Silva,Clínico Geral,Limpeza,10101012,84,84,0,-
+2025-06-24,Paciente 225,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,62,62,0,-
+2025-04-18,Paciente 226,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,102,63,39,Falta de RX
+2025-06-21,Paciente 227,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,587,587,0,-
+2025-08-11,Paciente 228,Dr. João Silva,Clínico Geral,Limpeza,10101012,62,62,0,-
+2025-01-18,Paciente 229,Dr. Pedro Lima,Clínico Geral,Extração,10101056,197,197,0,-
+2025-04-23,Paciente 230,Dr. João Silva,Clínico Geral,Restauração,10101034,131,131,0,-
+2025-06-24,Paciente 231,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,104,104,0,-
+2025-09-01,Paciente 232,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,613,511,102,Cobrança duplicada
+2025-06-20,Paciente 233,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,109,109,0,-
+2025-03-09,Paciente 234,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,85,50,35,Falta de RX
+2025-09-14,Paciente 235,Dr. João Silva,Clínico Geral,Restauração,10101034,127,127,0,-
+2025-02-22,Paciente 236,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,103,103,0,-
+2025-07-18,Paciente 237,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,106,106,0,-
+2025-01-04,Paciente 238,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,464,464,0,-
+2025-01-22,Paciente 239,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,120,120,0,-
+2025-07-27,Paciente 240,Dr. João Silva,Clínico Geral,Restauração,10101034,148,148,0,-
+2025-02-01,Paciente 241,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,93,93,0,-
+2025-12-10,Paciente 242,Dr. Pedro Lima,Clínico Geral,Extração,10101056,127,87,40,Divergência de código
+2025-05-17,Paciente 243,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,496,419,77,Divergência de código
+2025-02-26,Paciente 244,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,534,373,161,Ausência de justificativa
+2025-02-19,Paciente 245,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,488,488,0,-
+2025-05-10,Paciente 246,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,648,648,0,-
+2025-03-21,Paciente 247,Dr. João Silva,Clínico Geral,Extração,10101056,145,145,0,-
+2025-07-29,Paciente 248,Dr. João Silva,Clínico Geral,Extração,10101056,154,154,0,-
+2025-01-14,Paciente 249,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,626,626,0,-
+2025-02-17,Paciente 250,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,104,68,36,Ausência de justificativa
+2025-01-20,Paciente 251,Dr. João Silva,Clínico Geral,Restauração,10101034,139,139,0,-
+2025-01-02,Paciente 252,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,108,108,0,-
+2025-09-05,Paciente 253,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,69,57,12,Falta de RX
+2025-07-15,Paciente 254,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,570,570,0,-
+2025-06-14,Paciente 255,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,115,115,0,-
+2025-06-19,Paciente 256,Dr. João Silva,Clínico Geral,Extração,10101056,163,163,0,-
+2025-03-16,Paciente 257,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,113,113,0,-
+2025-02-08,Paciente 258,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,101,101,0,-
+2025-10-16,Paciente 259,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,513,513,0,-
+2025-06-14,Paciente 260,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,643,643,0,-
+2025-07-18,Paciente 261,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,464,464,0,-
+2025-09-21,Paciente 262,Dr. João Silva,Clínico Geral,Limpeza,10101012,81,51,30,Ausência de justificativa
+2025-02-03,Paciente 263,Dr. Pedro Lima,Clínico Geral,Extração,10101056,193,193,0,-
+2025-05-03,Paciente 264,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,486,486,0,-
+2025-09-20,Paciente 265,Dr. Pedro Lima,Clínico Geral,Extração,10101056,132,132,0,-
+2025-01-17,Paciente 266,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,73,73,0,-
+2025-08-03,Paciente 267,Dr. Pedro Lima,Clínico Geral,Extração,10101056,165,165,0,-
+2025-11-03,Paciente 268,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,92,92,0,-
+2025-07-11,Paciente 269,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,113,113,0,-
+2025-07-18,Paciente 270,Dr. João Silva,Clínico Geral,Limpeza,10101012,72,72,0,-
+2025-12-24,Paciente 271,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,453,363,90,Divergência de código
+2025-02-22,Paciente 272,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,134,134,0,-
+2025-03-14,Paciente 273,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,114,114,0,-
+2025-06-03,Paciente 274,Dr. João Silva,Clínico Geral,Limpeza,10101012,88,88,0,-
+2025-09-26,Paciente 275,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,114,93,21,Falta de RX
+2025-02-10,Paciente 276,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,484,484,0,-
+2025-10-15,Paciente 277,Dr. João Silva,Clínico Geral,Restauração,10101034,165,165,0,-
+2025-11-24,Paciente 278,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,105,105,0,-
+2025-01-14,Paciente 279,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,432,432,0,-
+2025-07-30,Paciente 280,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,82,82,0,-
+2025-01-14,Paciente 281,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,77,77,0,-
+2025-02-05,Paciente 282,Dr. Pedro Lima,Clínico Geral,Extração,10101056,166,166,0,-
+2025-06-28,Paciente 283,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,631,631,0,-
+2025-10-31,Paciente 284,Dr. João Silva,Clínico Geral,Extração,10101056,140,140,0,-
+2025-06-01,Paciente 285,Dr. João Silva,Clínico Geral,Restauração,10101034,100,100,0,-
+2025-07-21,Paciente 286,Dr. João Silva,Clínico Geral,Restauração,10101034,116,116,0,-
+2025-04-16,Paciente 287,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,68,68,0,-
+2025-06-08,Paciente 288,Dr. João Silva,Clínico Geral,Restauração,10101034,122,61,61,Falta de RX
+2025-09-30,Paciente 289,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,100,100,0,-
+2025-01-07,Paciente 290,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,516,516,0,-
+2025-11-14,Paciente 291,Dr. Pedro Lima,Clínico Geral,Extração,10101056,154,154,0,-
+2025-04-05,Paciente 292,Dr. João Silva,Clínico Geral,Extração,10101056,141,141,0,-
+2025-11-03,Paciente 293,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,117,117,0,-
+2025-11-29,Paciente 294,Dr. João Silva,Clínico Geral,Extração,10101056,162,162,0,-
+2025-01-19,Paciente 295,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,439,439,0,-
+2025-09-24,Paciente 296,Dr. João Silva,Clínico Geral,Extração,10101056,121,121,0,-
+2025-11-30,Paciente 297,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,132,132,0,-
+2025-10-20,Paciente 298,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,178,178,0,-
+2025-11-03,Paciente 299,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,68,68,0,-
+2025-12-27,Paciente 300,Dr. João Silva,Clínico Geral,Limpeza,10101012,63,40,23,Ausência de justificativa
+2025-04-21,Paciente 301,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,635,635,0,-
+2025-04-12,Paciente 302,Dr. João Silva,Clínico Geral,Limpeza,10101012,76,76,0,-
+2025-11-13,Paciente 303,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,546,546,0,-
+2025-10-24,Paciente 304,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,451,451,0,-
+2025-02-22,Paciente 305,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,403,403,0,-
+2025-07-12,Paciente 306,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,63,63,0,-
+2025-12-26,Paciente 307,Dr. João Silva,Clínico Geral,Extração,10101056,190,190,0,-
+2025-12-14,Paciente 308,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,408,208,200,Cobrança duplicada
+2025-02-24,Paciente 309,Dr. Pedro Lima,Clínico Geral,Restauração,10101034,100,100,0,-
+2025-11-17,Paciente 310,Dra. Maria Souza,Endodontia,Tratamento de Canal,10101089,426,426,0,-
+2025-06-27,Paciente 311,Dr. Pedro Lima,Clínico Geral,Extração,10101056,153,153,0,-
+2025-01-14,Paciente 312,Dr. João Silva,Clínico Geral,Limpeza,10101012,89,89,0,-
+2025-05-15,Paciente 313,Dr. João Silva,Clínico Geral,Restauração,10101034,113,75,38,Falta de RX
+2025-12-29,Paciente 314,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,60,60,0,-
+2025-08-01,Paciente 315,Dr. Pedro Lima,Clínico Geral,Limpeza,10101012,78,78,0,-
+2025-03-19,Paciente 316,Dr. João Silva,Clínico Geral,Limpeza,10101012,73,73,0,-
+2025-10-20,Paciente 317,Dr. João Silva,Clínico Geral,Extração,10101056,154,154,0,-
+2025-03-18,Paciente 318,Dr. João Silva,Clínico Geral,Extração,10101056,152,152,0,-
+2025-08-26,Paciente 319,Dr. Pedro Lima,Clínico Geral,Extração,10101056,197,197,0,-
+2025-09-17,Paciente 320,Dra. Ana Costa,Ortodontia,Manutenção de Aparelho,10101123,107,82,25,Cobrança duplicada
