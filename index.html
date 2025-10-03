@@ -5,95 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Sabrine</title>
   <style>
-    /* Estilos Gerais */
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       background-color: #f4f4f4;
       color: #333;
     }
-
-    a {
-      text-decoration: none;
-      color: #4a90e2;
-    }
-
-    h2 {
-      color: #4a90e2;
-    }
-
-    /* Header */
     header {
       background-color: #4a90e2;
       color: white;
       padding: 50px 20px;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
       font-size: 2.5em;
     }
-
     header p {
       margin-top: 10px;
       font-size: 1.2em;
     }
-
-    /* Seções */
     section {
       max-width: 1000px;
       margin: 50px auto;
       padding: 0 20px;
-    }
-
-    .about, .skills, .experience, .portfolio, .contact {
       background-color: white;
-      padding: 30px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
       margin-bottom: 40px;
     }
-
-    /* Habilidades */
-    .skills ul {
+    h2 {
+      color: #4a90e2;
+    }
+    ul {
       list-style-type: square;
       padding-left: 20px;
     }
-
-    /* Portfólio */
-    .portfolio-item {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 15px;
     }
-
-    .portfolio-item img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
+    table, th, td {
+      border: 1px solid #ccc;
     }
-
-    /* Footer */
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
     footer {
       text-align: center;
       padding: 30px 20px;
       background-color: #333;
       color: white;
-    }
-
-    /* Responsivo */
-    @media (min-width: 700px) {
-      .portfolio-item {
-        flex-direction: row;
-        gap: 20px;
-        align-items: center;
-      }
-      .portfolio-item img {
-        max-width: 300px;
-      }
     }
   </style>
 </head>
@@ -115,8 +85,8 @@
     <li>Atendimento clínico: limpeza, restauração, extração, endodontia e ortodontia</li>
     <li>Gestão administrativa de clínicas</li>
     <li>Controle de agendas e volume de atendimentos</li>
-    <li>Experiência com auditoria prospectiva</li>
-    <li>Organização de processos e fluxos internos</li>
+    <li>Auditoria prospectiva e conformidade de procedimentos</li>
+    <li>Organização de processos internos</li>
     <li>Conhecimento em softwares de gestão odontológica</li>
     <li>Comunicação e atendimento ao paciente</li>
   </ul>
@@ -124,36 +94,43 @@
 
 <section class="experience">
   <h2>Experiência Profissional</h2>
-  <p><strong>Clínica XYZ</strong> - Dentista & Gestão de Planos (Amil) <br>
+  <p><strong>Clínica XYZ</strong> - Dentista & Gestão de Planos (Amil)<br>
      Atuei em atendimentos clínicos, controle de agendas e auditoria interna de procedimentos, garantindo conformidade com padrões de qualidade.</p>
 
-  <p><strong>Agência de Social Media</strong> - Assistente Administrativo <br>
+  <p><strong>Agência de Social Media</strong> - Assistente Administrativo<br>
      Experiência em organização de processos, controle de clientes e auxílio na gestão de campanhas digitais.</p>
 
-  <p><strong>Outras experiências</strong> - Secretária e suporte em e-commerce <br>
+  <p><strong>Outras experiências</strong> - Secretária e suporte em e-commerce<br>
      Gestão administrativa e financeira, otimização de fluxos internos e atendimento ao cliente.</p>
 </section>
 
 <section class="portfolio">
-  <h2>Meus Trabalhos</h2>
+  <h2>Portfólio Resumido</h2>
 
-  <div class="portfolio-item">
-    <img src="imagem1.jpg" alt="Projeto 1">
-    <div>
-      <h3>Projeto 1</h3>
-      <p>Descrição resumida do trabalho ou procedimento clínico/projeto administrativo.</p>
-    </div>
-  </div>
+  <p>Aqui está uma prévia do meu portfólio. Para ver todos os detalhes, você pode <a href="portfólio.xlsx" target="_blank">baixar o arquivo completo em Excel</a>.</p>
 
-  <div class="portfolio-item">
-    <img src="imagem2.jpg" alt="Projeto 2">
-    <div>
-      <h3>Projeto 2</h3>
-      <p>Descrição resumida do trabalho ou procedimento clínico/projeto administrativo.</p>
-    </div>
-  </div>
-
-  <!-- Adicione mais projetos aqui -->
+  <table>
+    <tr>
+      <th>Paciente</th>
+      <th>Procedimento</th>
+      <th>Data</th>
+    </tr>
+    <tr>
+      <td>João Silva</td>
+      <td>Limpeza</td>
+      <td>01/10/2025</td>
+    </tr>
+    <tr>
+      <td>Maria Souza</td>
+      <td>Restauração</td>
+      <td>02/10/2025</td>
+    </tr>
+    <tr>
+      <td>Carlos Pereira</td>
+      <td>Endodontia</td>
+      <td>03/10/2025</td>
+    </tr>
+  </table>
 </section>
 
 <section class="contact">
