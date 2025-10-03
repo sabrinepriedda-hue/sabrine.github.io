@@ -1,0 +1,3955 @@
+<!doctype html>
+<html lang='pt-BR'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width,initial-scale=1'/>
+<title>Portfólio - Auditoria Odontológica</title>
+<style>
+
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:20px;background:#f7f9fb;color:#0b2434}
+  .container{max-width:1200px;margin:0 auto;background:white;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(2,12,27,0.08)}
+  h1{margin:0 0 12px 0;font-size:20px}
+  .kpi-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+  .kpi{flex:1 1 160px;background:#f1f7fb;padding:12px;border-radius:8px;border:1px solid #e6eef6}
+  .kpi .value{font-weight:700;font-size:18px;display:block;margin-top:6px}
+  .controls{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+  .search-input{flex:1;padding:8px;border-radius:6px;border:1px solid #d0d7de}
+  .portfolio-table{width:100%;border-collapse:collapse;margin-top:8px}
+  .portfolio-table th, .portfolio-table td{padding:8px 10px;border-bottom:1px solid #eef3f7;text-align:left;font-size:13px}
+  .portfolio-table th{background:#fbfdff;position:sticky;top:0}
+  .small{font-size:12px;color:#556b7a}
+  @media (max-width:800px){ .kpi-row{flex-direction:column} .controls{flex-direction:column;align-items:stretch} }
+  td.numeric, th.numeric {text-align:right}
+  .btn{display:inline-block;padding:8px 12px;border-radius:6px;border:0;background:#0f7bff;color:white;text-decoration:none;font-weight:600}
+
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>Portfólio - Auditoria Odontológica</h1>
+<div class='kpi-row'>
+<div class='kpi'><div class='small'>Total de Procedimentos</div><div class='value'>320</div></div>
+<div class='kpi'><div class='small'>Valor Cobrado (R$)</div><div class='value'>R$ 72,933.00</div></div>
+<div class='kpi'><div class='small'>Valor Autorizado (R$)</div><div class='value'>R$ 69,549.00</div></div>
+<div class='kpi'><div class='small'>Valor Glosado (R$)</div><div class='value'>R$ 3,384.00</div></div>
+<div class='kpi'><div class='small'>Taxa de Glosa</div><div class='value'>4.64%</div></div>
+</div>
+<div class='controls'>
+<input id='search' class='search-input' placeholder='Pesquisar por paciente, dentista, procedimento, motivo...' />
+<a id='download-csv' class='btn' href='base_auditoria.csv' download>Baixar CSV</a>
+</div>
+
+</div>
+<div style='overflow:auto;max-height:600px;'>
+<table class="dataframe portfolio-table">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Data</th>
+      <th>Paciente</th>
+      <th>Dentista</th>
+      <th>Especialidade</th>
+      <th>Procedimento</th>
+      <th>Codigo TUSS</th>
+      <th>Valor Cobrado</th>
+      <th>Valor Autorizado</th>
+      <th>Glosa</th>
+      <th>Motivo da Glosa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-07-26</td>
+      <td>Paciente 001</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>628</td>
+      <td>628</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-16</td>
+      <td>Paciente 002</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>117</td>
+      <td>117</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-28</td>
+      <td>Paciente 003</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>650</td>
+      <td>650</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-09</td>
+      <td>Paciente 004</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>90</td>
+      <td>71</td>
+      <td>19</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-01-04</td>
+      <td>Paciente 005</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>623</td>
+      <td>623</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-04</td>
+      <td>Paciente 006</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>78</td>
+      <td>78</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-09</td>
+      <td>Paciente 007</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>638</td>
+      <td>638</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-30</td>
+      <td>Paciente 008</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>74</td>
+      <td>74</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-13</td>
+      <td>Paciente 009</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>162</td>
+      <td>105</td>
+      <td>57</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-06-16</td>
+      <td>Paciente 010</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>175</td>
+      <td>175</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-13</td>
+      <td>Paciente 011</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>68</td>
+      <td>68</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-21</td>
+      <td>Paciente 012</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>116</td>
+      <td>116</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-22</td>
+      <td>Paciente 013</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>93</td>
+      <td>80</td>
+      <td>13</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-09-04</td>
+      <td>Paciente 014</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>101</td>
+      <td>101</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-08</td>
+      <td>Paciente 015</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>425</td>
+      <td>425</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-06</td>
+      <td>Paciente 016</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>630</td>
+      <td>390</td>
+      <td>240</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-05-29</td>
+      <td>Paciente 017</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>80</td>
+      <td>62</td>
+      <td>18</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-11-07</td>
+      <td>Paciente 018</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>117</td>
+      <td>117</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-17</td>
+      <td>Paciente 019</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>107</td>
+      <td>107</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-23</td>
+      <td>Paciente 020</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>117</td>
+      <td>117</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-01</td>
+      <td>Paciente 021</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>164</td>
+      <td>164</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-11</td>
+      <td>Paciente 022</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>109</td>
+      <td>109</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-13</td>
+      <td>Paciente 023</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>89</td>
+      <td>89</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-02</td>
+      <td>Paciente 024</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>74</td>
+      <td>74</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-20</td>
+      <td>Paciente 025</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>90</td>
+      <td>90</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-20</td>
+      <td>Paciente 026</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>110</td>
+      <td>110</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-14</td>
+      <td>Paciente 027</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>186</td>
+      <td>186</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-29</td>
+      <td>Paciente 028</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>109</td>
+      <td>109</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-29</td>
+      <td>Paciente 029</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>186</td>
+      <td>97</td>
+      <td>89</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-02-13</td>
+      <td>Paciente 030</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>108</td>
+      <td>78</td>
+      <td>30</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-08-05</td>
+      <td>Paciente 031</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>402</td>
+      <td>402</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-09</td>
+      <td>Paciente 032</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>115</td>
+      <td>115</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-25</td>
+      <td>Paciente 033</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>513</td>
+      <td>257</td>
+      <td>256</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-03-25</td>
+      <td>Paciente 034</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>126</td>
+      <td>126</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-14</td>
+      <td>Paciente 035</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>88</td>
+      <td>88</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-18</td>
+      <td>Paciente 036</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>103</td>
+      <td>90</td>
+      <td>13</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-10-23</td>
+      <td>Paciente 037</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>72</td>
+      <td>72</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-22</td>
+      <td>Paciente 038</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>98</td>
+      <td>98</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-29</td>
+      <td>Paciente 039</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>423</td>
+      <td>302</td>
+      <td>121</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-07-27</td>
+      <td>Paciente 040</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>134</td>
+      <td>134</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-22</td>
+      <td>Paciente 041</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>135</td>
+      <td>135</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-02</td>
+      <td>Paciente 042</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>459</td>
+      <td>459</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-01</td>
+      <td>Paciente 043</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>102</td>
+      <td>102</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-06</td>
+      <td>Paciente 044</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-23</td>
+      <td>Paciente 045</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>103</td>
+      <td>103</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-18</td>
+      <td>Paciente 046</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>102</td>
+      <td>66</td>
+      <td>36</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-04-02</td>
+      <td>Paciente 047</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>481</td>
+      <td>481</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-08</td>
+      <td>Paciente 048</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>199</td>
+      <td>199</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-24</td>
+      <td>Paciente 049</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>105</td>
+      <td>105</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-13</td>
+      <td>Paciente 050</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>100</td>
+      <td>63</td>
+      <td>37</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-10-09</td>
+      <td>Paciente 051</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>165</td>
+      <td>165</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-14</td>
+      <td>Paciente 052</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>638</td>
+      <td>638</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-15</td>
+      <td>Paciente 053</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>192</td>
+      <td>192</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-09</td>
+      <td>Paciente 054</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>114</td>
+      <td>114</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-21</td>
+      <td>Paciente 055</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>156</td>
+      <td>156</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-02</td>
+      <td>Paciente 056</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>98</td>
+      <td>98</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-04</td>
+      <td>Paciente 057</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>104</td>
+      <td>104</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-31</td>
+      <td>Paciente 058</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>112</td>
+      <td>112</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-17</td>
+      <td>Paciente 059</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>179</td>
+      <td>179</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-19</td>
+      <td>Paciente 060</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>448</td>
+      <td>270</td>
+      <td>178</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-04-19</td>
+      <td>Paciente 061</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>635</td>
+      <td>635</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-07</td>
+      <td>Paciente 062</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>78</td>
+      <td>78</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-24</td>
+      <td>Paciente 063</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>544</td>
+      <td>544</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-16</td>
+      <td>Paciente 064</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>78</td>
+      <td>78</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-28</td>
+      <td>Paciente 065</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>171</td>
+      <td>171</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-19</td>
+      <td>Paciente 066</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>621</td>
+      <td>621</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-21</td>
+      <td>Paciente 067</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>580</td>
+      <td>580</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-02</td>
+      <td>Paciente 068</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>102</td>
+      <td>102</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-20</td>
+      <td>Paciente 069</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>155</td>
+      <td>138</td>
+      <td>17</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-10-20</td>
+      <td>Paciente 070</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>499</td>
+      <td>499</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-12</td>
+      <td>Paciente 071</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>153</td>
+      <td>122</td>
+      <td>31</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-04-05</td>
+      <td>Paciente 072</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>108</td>
+      <td>108</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-01</td>
+      <td>Paciente 073</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>417</td>
+      <td>417</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-17</td>
+      <td>Paciente 074</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>546</td>
+      <td>546</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-08</td>
+      <td>Paciente 075</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>80</td>
+      <td>80</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-21</td>
+      <td>Paciente 076</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>94</td>
+      <td>94</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-09</td>
+      <td>Paciente 077</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>423</td>
+      <td>423</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-08</td>
+      <td>Paciente 078</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>156</td>
+      <td>127</td>
+      <td>29</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-02-09</td>
+      <td>Paciente 079</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>179</td>
+      <td>179</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-05</td>
+      <td>Paciente 080</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>113</td>
+      <td>113</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-10</td>
+      <td>Paciente 081</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>197</td>
+      <td>197</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-07</td>
+      <td>Paciente 082</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>515</td>
+      <td>515</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-20</td>
+      <td>Paciente 083</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>129</td>
+      <td>129</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-30</td>
+      <td>Paciente 084</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>142</td>
+      <td>142</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-04</td>
+      <td>Paciente 085</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>112</td>
+      <td>112</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-25</td>
+      <td>Paciente 086</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>554</td>
+      <td>554</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-02</td>
+      <td>Paciente 087</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>123</td>
+      <td>123</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-25</td>
+      <td>Paciente 088</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>173</td>
+      <td>173</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-07</td>
+      <td>Paciente 089</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>104</td>
+      <td>104</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-22</td>
+      <td>Paciente 090</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>534</td>
+      <td>534</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-01</td>
+      <td>Paciente 091</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>405</td>
+      <td>405</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-21</td>
+      <td>Paciente 092</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>184</td>
+      <td>184</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-23</td>
+      <td>Paciente 093</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>485</td>
+      <td>485</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-22</td>
+      <td>Paciente 094</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>75</td>
+      <td>75</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-10</td>
+      <td>Paciente 095</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>83</td>
+      <td>83</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-15</td>
+      <td>Paciente 096</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>625</td>
+      <td>625</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-11</td>
+      <td>Paciente 097</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>641</td>
+      <td>641</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-29</td>
+      <td>Paciente 098</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>108</td>
+      <td>108</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-11</td>
+      <td>Paciente 099</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>176</td>
+      <td>176</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-12</td>
+      <td>Paciente 100</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>142</td>
+      <td>142</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-14</td>
+      <td>Paciente 101</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>114</td>
+      <td>114</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-02</td>
+      <td>Paciente 102</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>70</td>
+      <td>70</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-08</td>
+      <td>Paciente 103</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>146</td>
+      <td>146</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-16</td>
+      <td>Paciente 104</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>90</td>
+      <td>90</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-28</td>
+      <td>Paciente 105</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>432</td>
+      <td>432</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-04</td>
+      <td>Paciente 106</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>99</td>
+      <td>99</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-07</td>
+      <td>Paciente 107</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>120</td>
+      <td>120</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-27</td>
+      <td>Paciente 108</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>72</td>
+      <td>42</td>
+      <td>30</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-05-01</td>
+      <td>Paciente 109</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>423</td>
+      <td>423</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-26</td>
+      <td>Paciente 110</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>448</td>
+      <td>448</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-02</td>
+      <td>Paciente 111</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>106</td>
+      <td>106</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-08</td>
+      <td>Paciente 112</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>130</td>
+      <td>130</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-24</td>
+      <td>Paciente 113</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>96</td>
+      <td>96</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-17</td>
+      <td>Paciente 114</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>436</td>
+      <td>265</td>
+      <td>171</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-11-03</td>
+      <td>Paciente 115</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>97</td>
+      <td>97</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-18</td>
+      <td>Paciente 116</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>515</td>
+      <td>439</td>
+      <td>76</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-11-23</td>
+      <td>Paciente 117</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>95</td>
+      <td>95</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-21</td>
+      <td>Paciente 118</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>164</td>
+      <td>164</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-09</td>
+      <td>Paciente 119</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>606</td>
+      <td>606</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-07</td>
+      <td>Paciente 120</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>108</td>
+      <td>108</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-10</td>
+      <td>Paciente 121</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>138</td>
+      <td>138</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-12</td>
+      <td>Paciente 122</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>67</td>
+      <td>67</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-01</td>
+      <td>Paciente 123</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>595</td>
+      <td>595</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-09</td>
+      <td>Paciente 124</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>200</td>
+      <td>200</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-12</td>
+      <td>Paciente 125</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>69</td>
+      <td>69</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-21</td>
+      <td>Paciente 126</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>190</td>
+      <td>190</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-11</td>
+      <td>Paciente 127</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>139</td>
+      <td>139</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-01</td>
+      <td>Paciente 128</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>186</td>
+      <td>186</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-06</td>
+      <td>Paciente 129</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>109</td>
+      <td>71</td>
+      <td>38</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-08-31</td>
+      <td>Paciente 130</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>148</td>
+      <td>148</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-09</td>
+      <td>Paciente 131</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>112</td>
+      <td>112</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-09</td>
+      <td>Paciente 132</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>128</td>
+      <td>75</td>
+      <td>53</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-11-13</td>
+      <td>Paciente 133</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-24</td>
+      <td>Paciente 134</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>119</td>
+      <td>119</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-07</td>
+      <td>Paciente 135</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>105</td>
+      <td>105</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-03</td>
+      <td>Paciente 136</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>138</td>
+      <td>138</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-07</td>
+      <td>Paciente 137</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>171</td>
+      <td>171</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-12</td>
+      <td>Paciente 138</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>87</td>
+      <td>87</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-19</td>
+      <td>Paciente 139</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>124</td>
+      <td>124</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-24</td>
+      <td>Paciente 140</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>448</td>
+      <td>448</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-04</td>
+      <td>Paciente 141</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>149</td>
+      <td>149</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-15</td>
+      <td>Paciente 142</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>84</td>
+      <td>84</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-20</td>
+      <td>Paciente 143</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>638</td>
+      <td>638</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-05</td>
+      <td>Paciente 144</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>423</td>
+      <td>423</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-29</td>
+      <td>Paciente 145</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>194</td>
+      <td>194</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-15</td>
+      <td>Paciente 146</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>103</td>
+      <td>103</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-27</td>
+      <td>Paciente 147</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>552</td>
+      <td>552</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-04</td>
+      <td>Paciente 148</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>62</td>
+      <td>62</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-30</td>
+      <td>Paciente 149</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>149</td>
+      <td>149</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-31</td>
+      <td>Paciente 150</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>539</td>
+      <td>539</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-03</td>
+      <td>Paciente 151</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>125</td>
+      <td>125</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-30</td>
+      <td>Paciente 152</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>110</td>
+      <td>110</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-02</td>
+      <td>Paciente 153</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>109</td>
+      <td>109</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-08</td>
+      <td>Paciente 154</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>589</td>
+      <td>589</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-11</td>
+      <td>Paciente 155</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>118</td>
+      <td>102</td>
+      <td>16</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-10-17</td>
+      <td>Paciente 156</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>60</td>
+      <td>51</td>
+      <td>9</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-06-17</td>
+      <td>Paciente 157</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>163</td>
+      <td>163</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-23</td>
+      <td>Paciente 158</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>180</td>
+      <td>180</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-29</td>
+      <td>Paciente 159</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>114</td>
+      <td>114</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-04</td>
+      <td>Paciente 160</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>63</td>
+      <td>63</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-12</td>
+      <td>Paciente 161</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>533</td>
+      <td>533</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-14</td>
+      <td>Paciente 162</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>97</td>
+      <td>75</td>
+      <td>22</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-12-27</td>
+      <td>Paciente 163</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>454</td>
+      <td>324</td>
+      <td>130</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-11-18</td>
+      <td>Paciente 164</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>643</td>
+      <td>643</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-22</td>
+      <td>Paciente 165</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>120</td>
+      <td>75</td>
+      <td>45</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-10-04</td>
+      <td>Paciente 166</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>73</td>
+      <td>73</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-10</td>
+      <td>Paciente 167</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>499</td>
+      <td>499</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-03</td>
+      <td>Paciente 168</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>149</td>
+      <td>87</td>
+      <td>62</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-05-15</td>
+      <td>Paciente 169</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>114</td>
+      <td>114</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-21</td>
+      <td>Paciente 170</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>135</td>
+      <td>81</td>
+      <td>54</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-07-23</td>
+      <td>Paciente 171</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>72</td>
+      <td>72</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-05</td>
+      <td>Paciente 172</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>129</td>
+      <td>129</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-02</td>
+      <td>Paciente 173</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>649</td>
+      <td>649</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-29</td>
+      <td>Paciente 174</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>496</td>
+      <td>496</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-12</td>
+      <td>Paciente 175</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>463</td>
+      <td>463</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-01</td>
+      <td>Paciente 176</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>103</td>
+      <td>73</td>
+      <td>30</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-04-19</td>
+      <td>Paciente 177</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>168</td>
+      <td>168</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-11</td>
+      <td>Paciente 178</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>459</td>
+      <td>459</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-17</td>
+      <td>Paciente 179</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>419</td>
+      <td>419</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-06</td>
+      <td>Paciente 180</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>621</td>
+      <td>621</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-23</td>
+      <td>Paciente 181</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-03</td>
+      <td>Paciente 182</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>451</td>
+      <td>345</td>
+      <td>106</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-12-13</td>
+      <td>Paciente 183</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>188</td>
+      <td>188</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-20</td>
+      <td>Paciente 184</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>92</td>
+      <td>92</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-28</td>
+      <td>Paciente 185</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>169</td>
+      <td>142</td>
+      <td>27</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-11-20</td>
+      <td>Paciente 186</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>150</td>
+      <td>150</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-04</td>
+      <td>Paciente 187</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>157</td>
+      <td>157</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-29</td>
+      <td>Paciente 188</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>192</td>
+      <td>163</td>
+      <td>29</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-07-25</td>
+      <td>Paciente 189</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>515</td>
+      <td>515</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-21</td>
+      <td>Paciente 190</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>617</td>
+      <td>617</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-30</td>
+      <td>Paciente 191</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>117</td>
+      <td>117</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-21</td>
+      <td>Paciente 192</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>409</td>
+      <td>409</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-30</td>
+      <td>Paciente 193</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>72</td>
+      <td>72</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-08</td>
+      <td>Paciente 194</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>98</td>
+      <td>98</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-25</td>
+      <td>Paciente 195</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>126</td>
+      <td>126</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-03</td>
+      <td>Paciente 196</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>118</td>
+      <td>118</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-05</td>
+      <td>Paciente 197</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>118</td>
+      <td>118</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-27</td>
+      <td>Paciente 198</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>131</td>
+      <td>131</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-19</td>
+      <td>Paciente 199</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>521</td>
+      <td>521</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-20</td>
+      <td>Paciente 200</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>495</td>
+      <td>495</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-04</td>
+      <td>Paciente 201</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>160</td>
+      <td>105</td>
+      <td>55</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-05-17</td>
+      <td>Paciente 202</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>565</td>
+      <td>565</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-29</td>
+      <td>Paciente 203</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>129</td>
+      <td>72</td>
+      <td>57</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-12-20</td>
+      <td>Paciente 204</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>477</td>
+      <td>477</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-21</td>
+      <td>Paciente 205</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>90</td>
+      <td>90</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-18</td>
+      <td>Paciente 206</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>427</td>
+      <td>427</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-17</td>
+      <td>Paciente 207</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>72</td>
+      <td>72</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-08</td>
+      <td>Paciente 208</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>110</td>
+      <td>72</td>
+      <td>38</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-06-13</td>
+      <td>Paciente 209</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>125</td>
+      <td>125</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-21</td>
+      <td>Paciente 210</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>161</td>
+      <td>89</td>
+      <td>72</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-08-17</td>
+      <td>Paciente 211</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>116</td>
+      <td>116</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-23</td>
+      <td>Paciente 212</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>124</td>
+      <td>124</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-21</td>
+      <td>Paciente 213</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>106</td>
+      <td>81</td>
+      <td>25</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-09-11</td>
+      <td>Paciente 214</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>183</td>
+      <td>183</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-14</td>
+      <td>Paciente 215</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>82</td>
+      <td>82</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-02</td>
+      <td>Paciente 216</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>104</td>
+      <td>104</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-02</td>
+      <td>Paciente 217</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>95</td>
+      <td>95</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-17</td>
+      <td>Paciente 218</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>95</td>
+      <td>95</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-28</td>
+      <td>Paciente 219</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>103</td>
+      <td>76</td>
+      <td>27</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-08-04</td>
+      <td>Paciente 220</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>71</td>
+      <td>71</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-08</td>
+      <td>Paciente 221</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>99</td>
+      <td>61</td>
+      <td>38</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-08-13</td>
+      <td>Paciente 222</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>402</td>
+      <td>402</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-08</td>
+      <td>Paciente 223</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>551</td>
+      <td>551</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-18</td>
+      <td>Paciente 224</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>84</td>
+      <td>84</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-24</td>
+      <td>Paciente 225</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>62</td>
+      <td>62</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-18</td>
+      <td>Paciente 226</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>102</td>
+      <td>63</td>
+      <td>39</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-06-21</td>
+      <td>Paciente 227</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>587</td>
+      <td>587</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-11</td>
+      <td>Paciente 228</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>62</td>
+      <td>62</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-18</td>
+      <td>Paciente 229</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>197</td>
+      <td>197</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-23</td>
+      <td>Paciente 230</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>131</td>
+      <td>131</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-24</td>
+      <td>Paciente 231</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>104</td>
+      <td>104</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-01</td>
+      <td>Paciente 232</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>613</td>
+      <td>511</td>
+      <td>102</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-06-20</td>
+      <td>Paciente 233</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>109</td>
+      <td>109</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-09</td>
+      <td>Paciente 234</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>85</td>
+      <td>50</td>
+      <td>35</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-09-14</td>
+      <td>Paciente 235</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>127</td>
+      <td>127</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-22</td>
+      <td>Paciente 236</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>103</td>
+      <td>103</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-18</td>
+      <td>Paciente 237</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>106</td>
+      <td>106</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-04</td>
+      <td>Paciente 238</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>464</td>
+      <td>464</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-22</td>
+      <td>Paciente 239</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>120</td>
+      <td>120</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-27</td>
+      <td>Paciente 240</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>148</td>
+      <td>148</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-01</td>
+      <td>Paciente 241</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>93</td>
+      <td>93</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-10</td>
+      <td>Paciente 242</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>127</td>
+      <td>87</td>
+      <td>40</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-05-17</td>
+      <td>Paciente 243</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>496</td>
+      <td>419</td>
+      <td>77</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-02-26</td>
+      <td>Paciente 244</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>534</td>
+      <td>373</td>
+      <td>161</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-02-19</td>
+      <td>Paciente 245</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>488</td>
+      <td>488</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-10</td>
+      <td>Paciente 246</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>648</td>
+      <td>648</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-21</td>
+      <td>Paciente 247</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>145</td>
+      <td>145</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-29</td>
+      <td>Paciente 248</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>154</td>
+      <td>154</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-14</td>
+      <td>Paciente 249</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>626</td>
+      <td>626</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-17</td>
+      <td>Paciente 250</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>104</td>
+      <td>68</td>
+      <td>36</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-01-20</td>
+      <td>Paciente 251</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>139</td>
+      <td>139</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-02</td>
+      <td>Paciente 252</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>108</td>
+      <td>108</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-05</td>
+      <td>Paciente 253</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>69</td>
+      <td>57</td>
+      <td>12</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-07-15</td>
+      <td>Paciente 254</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>570</td>
+      <td>570</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-14</td>
+      <td>Paciente 255</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>115</td>
+      <td>115</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-19</td>
+      <td>Paciente 256</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>163</td>
+      <td>163</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-16</td>
+      <td>Paciente 257</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>113</td>
+      <td>113</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-08</td>
+      <td>Paciente 258</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>101</td>
+      <td>101</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-16</td>
+      <td>Paciente 259</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>513</td>
+      <td>513</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-14</td>
+      <td>Paciente 260</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>643</td>
+      <td>643</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-18</td>
+      <td>Paciente 261</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>464</td>
+      <td>464</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-21</td>
+      <td>Paciente 262</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>81</td>
+      <td>51</td>
+      <td>30</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-02-03</td>
+      <td>Paciente 263</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>193</td>
+      <td>193</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-03</td>
+      <td>Paciente 264</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>486</td>
+      <td>486</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-20</td>
+      <td>Paciente 265</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>132</td>
+      <td>132</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-17</td>
+      <td>Paciente 266</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>73</td>
+      <td>73</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-03</td>
+      <td>Paciente 267</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>165</td>
+      <td>165</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-03</td>
+      <td>Paciente 268</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>92</td>
+      <td>92</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-11</td>
+      <td>Paciente 269</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>113</td>
+      <td>113</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-18</td>
+      <td>Paciente 270</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>72</td>
+      <td>72</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-24</td>
+      <td>Paciente 271</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>453</td>
+      <td>363</td>
+      <td>90</td>
+      <td>Divergência de código</td>
+    </tr>
+    <tr>
+      <td>2025-02-22</td>
+      <td>Paciente 272</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>134</td>
+      <td>134</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-14</td>
+      <td>Paciente 273</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>114</td>
+      <td>114</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-03</td>
+      <td>Paciente 274</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>88</td>
+      <td>88</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-26</td>
+      <td>Paciente 275</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>114</td>
+      <td>93</td>
+      <td>21</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-02-10</td>
+      <td>Paciente 276</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>484</td>
+      <td>484</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-15</td>
+      <td>Paciente 277</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>165</td>
+      <td>165</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-24</td>
+      <td>Paciente 278</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>105</td>
+      <td>105</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-14</td>
+      <td>Paciente 279</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>432</td>
+      <td>432</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-30</td>
+      <td>Paciente 280</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>82</td>
+      <td>82</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-14</td>
+      <td>Paciente 281</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>77</td>
+      <td>77</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-05</td>
+      <td>Paciente 282</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>166</td>
+      <td>166</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-28</td>
+      <td>Paciente 283</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>631</td>
+      <td>631</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-31</td>
+      <td>Paciente 284</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>140</td>
+      <td>140</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-01</td>
+      <td>Paciente 285</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-21</td>
+      <td>Paciente 286</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>116</td>
+      <td>116</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-16</td>
+      <td>Paciente 287</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>68</td>
+      <td>68</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-08</td>
+      <td>Paciente 288</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>122</td>
+      <td>61</td>
+      <td>61</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-09-30</td>
+      <td>Paciente 289</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-07</td>
+      <td>Paciente 290</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>516</td>
+      <td>516</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-14</td>
+      <td>Paciente 291</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>154</td>
+      <td>154</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-05</td>
+      <td>Paciente 292</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>141</td>
+      <td>141</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-03</td>
+      <td>Paciente 293</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>117</td>
+      <td>117</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-29</td>
+      <td>Paciente 294</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>162</td>
+      <td>162</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-19</td>
+      <td>Paciente 295</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>439</td>
+      <td>439</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-24</td>
+      <td>Paciente 296</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>121</td>
+      <td>121</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-30</td>
+      <td>Paciente 297</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>132</td>
+      <td>132</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-20</td>
+      <td>Paciente 298</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>178</td>
+      <td>178</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-03</td>
+      <td>Paciente 299</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>68</td>
+      <td>68</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-27</td>
+      <td>Paciente 300</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>63</td>
+      <td>40</td>
+      <td>23</td>
+      <td>Ausência de justificativa</td>
+    </tr>
+    <tr>
+      <td>2025-04-21</td>
+      <td>Paciente 301</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>635</td>
+      <td>635</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-04-12</td>
+      <td>Paciente 302</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>76</td>
+      <td>76</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-13</td>
+      <td>Paciente 303</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>546</td>
+      <td>546</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-24</td>
+      <td>Paciente 304</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>451</td>
+      <td>451</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-02-22</td>
+      <td>Paciente 305</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>403</td>
+      <td>403</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-07-12</td>
+      <td>Paciente 306</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>63</td>
+      <td>63</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-26</td>
+      <td>Paciente 307</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>190</td>
+      <td>190</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-12-14</td>
+      <td>Paciente 308</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>408</td>
+      <td>208</td>
+      <td>200</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+    <tr>
+      <td>2025-02-24</td>
+      <td>Paciente 309</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-11-17</td>
+      <td>Paciente 310</td>
+      <td>Dra. Maria Souza</td>
+      <td>Endodontia</td>
+      <td>Tratamento de Canal</td>
+      <td>10101089</td>
+      <td>426</td>
+      <td>426</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-06-27</td>
+      <td>Paciente 311</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>153</td>
+      <td>153</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-01-14</td>
+      <td>Paciente 312</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>89</td>
+      <td>89</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-05-15</td>
+      <td>Paciente 313</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Restauração</td>
+      <td>10101034</td>
+      <td>113</td>
+      <td>75</td>
+      <td>38</td>
+      <td>Falta de RX</td>
+    </tr>
+    <tr>
+      <td>2025-12-29</td>
+      <td>Paciente 314</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>60</td>
+      <td>60</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-01</td>
+      <td>Paciente 315</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>78</td>
+      <td>78</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-19</td>
+      <td>Paciente 316</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Limpeza</td>
+      <td>10101012</td>
+      <td>73</td>
+      <td>73</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-10-20</td>
+      <td>Paciente 317</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>154</td>
+      <td>154</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-03-18</td>
+      <td>Paciente 318</td>
+      <td>Dr. João Silva</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>152</td>
+      <td>152</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-08-26</td>
+      <td>Paciente 319</td>
+      <td>Dr. Pedro Lima</td>
+      <td>Clínico Geral</td>
+      <td>Extração</td>
+      <td>10101056</td>
+      <td>197</td>
+      <td>197</td>
+      <td>0</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2025-09-17</td>
+      <td>Paciente 320</td>
+      <td>Dra. Ana Costa</td>
+      <td>Ortodontia</td>
+      <td>Manutenção de Aparelho</td>
+      <td>10101123</td>
+      <td>107</td>
+      <td>82</td>
+      <td>25</td>
+      <td>Cobrança duplicada</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+<script>
+document.getElementById('search').addEventListener('input', function(e){
+  const q = e.target.value.toLowerCase().trim();
+  const table = document.querySelector('.portfolio-table');
+  const rows = table.tBodies[0].rows;
+  for(let r of rows){
+    const text = r.innerText.toLowerCase();
+    r.style.display = text.indexOf(q) > -1 ? '' : 'none';
+  }
+});
+
+(function(){
+  const header = document.querySelectorAll('.portfolio-table thead th');
+  header.forEach((th, idx)=>{
+    const txt = th.innerText.toLowerCase();
+    if(/valor|glosa|codigo|total|r\$/.test(txt)) {
+      const rows = document.querySelectorAll('.portfolio-table tbody tr');
+      rows.forEach(row=>{ row.children[idx].classList.add('numeric'); });
+      th.classList.add('numeric');
+    }
+    th.style.cursor = 'pointer';
+    th.addEventListener('click', ()=>{ 
+      sortTableByColumn(idx);
+    });
+  });
+})();
+
+function sortTableByColumn(colIndex) {
+  const table = document.querySelector('.portfolio-table');
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.querySelectorAll('tr')).filter(r=> r.style.display !== 'none');
+  const isNumeric = tbody.querySelector('tr td:nth-child(' + (colIndex+1) + ')').classList.contains('numeric');
+  const asc = table.getAttribute('data-sort-col') == colIndex && table.getAttribute('data-sort-dir') == 'asc' ? false : true;
+  rows.sort((a,b)=>{
+    const A = a.children[colIndex].innerText.trim();
+    const B = b.children[colIndex].innerText.trim();
+    if(isNumeric){ 
+      const nA = parseFloat(A.replace(/[^0-9\-\.]/g,'')) || 0;
+      const nB = parseFloat(B.replace(/[^0-9\-\.]/g,'')) || 0;
+      return asc ? nA - nB : nB - nA;
+    } else {
+      return asc ? A.localeCompare(B) : B.localeCompare(A);
+    }
+  });
+  rows.forEach(r=> tbody.appendChild(r));
+  table.setAttribute('data-sort-col', colIndex);
+  table.setAttribute('data-sort-dir', asc ? 'asc' : 'desc');
+}
+</script>
+</body>
+</html>
